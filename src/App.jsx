@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import TimesCard from "./components/TimesCard";
-import Countdown from "./components/CountDown";
+import Countdown from "./components/Countdown";
+
 import NextPrayer from "./components/NextPrayer";
 import MonthlyCalendar from "./components/MonthlyCalendar";
 import Tasbih from "./components/Tasbih";
