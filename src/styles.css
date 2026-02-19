@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.app {
+  padding: 30px;
+  min-height: 100vh;
+  transition: background 1.2s ease;
+}
+
+/* THEMES */
+
+.app.day {
+  background: linear-gradient(180deg, #87ceeb, #e0f7fa, #fff9c4);
+  color: #222;
+}
+
+.app.sunset {
+  background: linear-gradient(180deg, #ff9966, #ff5e62, #2c3e50);
+}
+
+.app.night {
+  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+}
+
+/* TEXT */
+
+.heading {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #ffd700, #ff9a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub {
+  opacity: 0.9;
+}
+
+/* INPUTS */
+
+.searchBox input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+.searchBox button {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(45deg, orange, gold);
+  cursor: pointer;
+}
+
+/* PRAYER CARD */
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 420px;
+  margin: 30px auto;
+}
+
+.grid div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.grid span {
+  font-weight: bold;
+  color: #ffe082;
+}
+
+.animate {
+  animation: fade 0.6s ease;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* NEXT PRAYER */
+
+.nextPrayer {
+  font-size: 20px;
+  margin-top: 12px;
+  color: #ffe082;
+  font-weight: bold;
+}
+
+/* MONTH TABLE */
+
+.monthTable {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.dayCard {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 12px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.dayCard:hover {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.dayNum {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* TASBIH */
+
+.tasbih {
+  margin-top: 60px;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, #ffd54f, #ff8f00);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin: 20px auto;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.circle:active {
+  transform: scale(0.95);
+}
+
+.resetBtn {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #444;
+  color: white;
+  cursor: pointer;
+}
+
+/* DUA CARD */
+
+.duaCard {
+  margin: 40px auto;
+  padding: 25px;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+}
+
+.arabic {
+  font-size: 26px;
+  margin-top: 15px;
+  direction: rtl;
+  line-height: 1.8;
+}
+
+.meaning {
+  margin-top: 12px;
+  opacity: 0.9;
+}
+
+/* BIG TIMER CARDS */
+
+.timers {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.timerCard {
+  padding: 20px 30px;
+  border-radius: 18px;
+  min-width: 260px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.iftarCard {
+  background: linear-gradient(135deg, #ffb300, #ff6f00);
+}
+
+.sehriCard {
+  background: linear-gradient(135deg, #0288d1, #26c6da);
+}
+
+.label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 26px;
+  margin-top: 8px;
+}
+.qibla {
+  margin-top: 70px;
+}
+
+.compass {
+  font-size: 80px;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff, #ccc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s linear;
+}
+/* MODERN MONTH VIEW */
+
+.monthContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.dayCard {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: 0.25s;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dayCard:hover {
+  transform: translateY(-6px) scale(1.04);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.dayHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.dayNumber {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.todayBadge {
+  background: #ffb300;
+  color: black;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.timeRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.todayCard {
+  border: 2px solid #ffb300;
+  background: rgba(255, 179, 0, 0.15);
+}
